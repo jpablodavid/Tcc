@@ -1,33 +1,30 @@
-import { StyleSheet } from "react-native";
+import { StyleSheet, ImageBackground } from "react-native";
 
 export const styles = StyleSheet.create({
     container: {
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: '#f8d7b0',
     },
-    logo: {
-        width: '80%',
-        height: 200,
-        marginBottom: 50,
+    background: {
+        width: '100%',
+        height: '100%',
+        justifyContent: 'flex-end',
+        alignItems: 'center',
+        paddingVertical: 40,
     },
     button: {
-        backgroundColor: '#ff6b6b',
-        paddingHorizontal: 40,
-        paddingVertical: 15,
-        borderRadius: 30,
+        backgroundColor: '#CC7722',
+        borderColor: '#cc77',
+        borderWidth: 2,
+        paddingHorizontal: 30,
+        paddingVertical: 10,
+        borderRadius: 10,
         elevation: 5,
     },
     buttonText: {
-        color: 'white',
+        color: '#FFFFED',
         fontSize: 24,
         fontWeight: 'bold',
-    },
-    footer: {
-        position: 'absolute',
-        bottom: 20,
-        color: '#666',
-        fontSize: 16,
     },
 });

@@ -2,7 +2,7 @@ import { Audio } from 'expo-av'
 import { Sound } from 'expo-av/build/Audio'
 
 // Tipos para os sons disponíveis
-type SoundType = 'background' | 'match' | 'win' | 'lose' | 'click';
+type SoundType = 'background' | 'match' | 'win' | 'lose' | 'click' | 'history';
 
 // Objeto para armazenar os sons carregados
 const sounds: Record<SoundType, Sound | null> = {
@@ -11,6 +11,7 @@ const sounds: Record<SoundType, Sound | null> = {
     win: null,
     lose: null,
     click: null,
+    history: null,
 };
 
 // Caminhos para os arquivos de áudio
@@ -19,7 +20,8 @@ const soundFiles: Record<SoundType, any> = {
     match: require('@/assets/sounds/match.wav'),
     win: require('@/assets/sounds/win.mp3'),
     lose: require('@/assets/sounds/lose.mp3'),
-    click: require('@/assets/sounds/click.wav'),
+    click: require('@/assets/sounds/click.mp3'),
+    history: require('@/assets/sounds/history.mp3'),
 };
 
 /**

@@ -13,14 +13,37 @@ export const levels: Level[] = [
     },
     {
         id: 2,
-        name: 'Nível Médio',
-        targetScore: 200,
+        name: 'Nível facil',
+        targetScore: 100,
+        maxMoves: 25,
+        boardSize: { rows: 6, cols: 6 },
+        unlocked: true,
+    },
+    {
+        id: 3,
+        name: 'Nível Medio',
+        targetScore: 150,
         maxMoves: 20,
         boardSize: { rows: 7, cols: 7 },
         unlocked: false,
     },
-    // Adicione mais níveis...
-    ]
+    {
+        id: 4,
+        name: 'Nível Medio',
+        targetScore: 150,
+        maxMoves: 20,
+        boardSize: { rows: 7, cols: 7 },
+        unlocked: false,
+    },
+    {
+        id: 5,
+        name: 'Nível dificil',
+        targetScore: 200,
+        maxMoves: 20,
+        boardSize: { rows: 8, cols: 8 },
+        unlocked: false,
+    },
+]
 
 // Tipos de tiles disponíveis
 const tileTypes: Array<TileType['type']> = ['red', 'blue', 'green', 'yellow', 'purple']

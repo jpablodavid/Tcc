@@ -9,8 +9,7 @@ import { playSound, setMuted } from '@/utils/audioManager'
 import { styles } from "./styles"
 
 
-export const GameScreen = () => {
-    
+const GameScreen = () => {
     
     const { levelId } = useLocalSearchParams()
 
@@ -169,3 +168,5 @@ export const GameScreen = () => {
         </View>
     )
 }
+
+export default GameScreen

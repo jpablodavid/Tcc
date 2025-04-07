@@ -1,12 +1,15 @@
-import React from 'react';
-import { loadSounds } from '@/utils/audioManager';
-import { HomeScreen } from '@/screens/homeScreen';
+import React from 'react'
+import { loadSounds } from '@/utils/audioManager'
+import  HomeScreen  from '@/screens/homeScreen'
+import Map from '@/screens/map'
 
 // Carrega os sons quando o app inicia
 loadSounds().catch(console.error);
 
-export const App = () => {
+const App = () => {
     return (
-        <HomeScreen/>
+        <Map/>
     );
 };
+
+export default App
