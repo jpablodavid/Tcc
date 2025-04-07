@@ -1,12 +1,13 @@
 import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
-    button : {
-        width: "100%",
-        height: 52,
-        backgroundColor: "red"
+    container: {
+        margin: 2,
+        justifyContent: 'center',
+        alignItems: 'center',
     },
-    title : {
-        textAlign: "center",
-    }
-})
+    image: {
+        width: '90%',
+        height: '90%',
+    },
+});

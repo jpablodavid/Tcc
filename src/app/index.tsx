@@ -1,14 +1,12 @@
-import{ View, Text} from "react-native"
+import React from 'react';
+import { loadSounds } from '@/utils/audioManager';
+import { HomeScreen } from '@/screens/homeScreen';
 
-import { Button } from "@/components/button"
+// Carrega os sons quando o app inicia
+loadSounds().catch(console.error);
 
-export default function Index(){
-    return(
-        <View>
-            <Text style={{color: "red", fontSize: 20}}>
-                hello World
-            </Text>
-            <Button title="clique aqui" />
-        </View>
-    )
-}
+export const App = () => {
+    return (
+        <HomeScreen/>
+    );
+};
